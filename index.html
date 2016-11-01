@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lights Out | by Tiffany Lo</title>
+  <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="index.html" class="brand-logo">Lights Out</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="how.html">How To Play</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- End Navbar-->
+    <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel blue-grey lighten-3">
+          <form name="bulbform">
+            <!-- Row One -->
+            <input type="checkbox" value="0" class="filled-in" id="filled-in-box-0" checked="1" />
+            <label for="filled-in-box-0"></label>
+            <input type="checkbox" value="1" class="filled-in" id="filled-in-box-1" checked="1" />
+            <label for="filled-in-box-1"></label>
+            <input type="checkbox" value="2" class="filled-in" id="filled-in-box-2" checked="1" />
+            <label for="filled-in-box-2"></label>
+            <input type="checkbox" value="3" class="filled-in" id="filled-in-box-3" checked="1" />
+            <label for="filled-in-box-3"></label>
+            <input type="checkbox" value="4" class="filled-in" id="filled-in-box-4" checked="1" />
+            <label for="filled-in-box-4"></label>
+
+            <!-- Row Two -->
+            <input type="checkbox" value="5" class="filled-in" id="filled-in-box-5" checked="1" />
+            <label for="filled-in-box-5"></label>
+            <input type="checkbox" value="6" class="filled-in" id="filled-in-box-6" checked="1" />
+            <label for="filled-in-box-6"></label>
+            <input type="checkbox" value="7" class="filled-in" id="filled-in-box-7" checked="1" />
+            <label for="filled-in-box-7"></label>
+            <input type="checkbox" value="8" class="filled-in" id="filled-in-box-8" checked="1" />
+            <label for="filled-in-box-8"></label>
+            <input type="checkbox" value="9" class="filled-in" id="filled-in-box-9" checked="1" />
+            <label for="filled-in-box-9"></label>
+
+            <!-- Row Three -->
+            <input type="checkbox" value="10" class="filled-in" id="filled-in-box-10" checked="1" />
+            <label for="filled-in-box-10"></label>
+            <input type="checkbox" value="11" class="filled-in" id="filled-in-box-11" checked="1" />
+            <label for="filled-in-box-11"></label>
+            <input type="checkbox" value="12" class="filled-in" id="filled-in-box-12" checked="1" />
+            <label for="filled-in-box-12"></label>
+            <input type="checkbox" value="13" class="filled-in" id="filled-in-box-13" checked="1" />
+            <label for="filled-in-box-13"></label>
+            <input type="checkbox" value="14" class="filled-in" id="filled-in-box-14" checked="1" />
+            <label for="filled-in-box-14"></label>
+
+            <!-- Row Four -->
+            <input type="checkbox" value="15" class="filled-in" id="filled-in-box-15" checked="1" />
+            <label for="filled-in-box-15"></label>
+            <input type="checkbox" value="16" class="filled-in" id="filled-in-box-16" checked="1" />
+            <label for="filled-in-box-16"></label>
+            <input type="checkbox" value="17" class="filled-in" id="filled-in-box-17" checked="1" />
+            <label for="filled-in-box-17"></label>
+            <input type="checkbox" value="18" class="filled-in" id="filled-in-box-18" checked="1" />
+            <label for="filled-in-box-18"></label>
+            <input type="checkbox" value="19" class="filled-in" id="filled-in-box-19" checked="1" />
+            <label for="filled-in-box-19"></label>
+
+            <!-- Row Five -->
+            <input type="checkbox" value="20" class="filled-in" id="filled-in-box-20" checked="1" />
+            <label for="filled-in-box-20"></label>
+            <input type="checkbox" value="21" class="filled-in" id="filled-in-box-21" checked="1" />
+            <label for="filled-in-box-21"></label>
+            <input type="checkbox" value="22" class="filled-in" id="filled-in-box-22" checked="1" />
+            <label for="filled-in-box-22"></label>
+            <input type="checkbox" value="23" class="filled-in" id="filled-in-box-23" checked="1" />
+            <label for="filled-in-box-23"></label>
+            <input type="checkbox" value="24" class="filled-in" id="filled-in-box-24" checked="1" />
+            <label for="filled-in-box-24"></label>
+            <br>
+            <!-- Stat Game Levels -->
+            <a href="javascript:levelOne()" class="waves-effect waves-teal btn-flat">Level 1</a>
+            <a href="javascript:levelTwo()" class="waves-effect waves-teal btn-flat">Level 2</a>
+            <a href="javascript:levelThree()" class="waves-effect waves-teal btn-flat">Level 3</a>
+            <a href="javascript:levelFour()" class="waves-effect waves-teal btn-flat">Level 4</a>
+            <a href="javascript:levelFive()" class="waves-effect waves-teal btn-flat">Level 5</a>
+            <!-- End Game Levels -->
+            <br>
+            <button class="btn waves-effect waves-light btn-large" type="reset" value="clear" name="action">Clear
+                <i class="material-icons left">lightbulb_outline</i>
+            </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
